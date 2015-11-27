@@ -1,0 +1,197 @@
+
+.video-item{
+	margin:10px auto;
+	padding:20px 10px;
+	width: 767px;
+	height: 300px;
+	border:1px solid #CCC;
+	.tile{
+		float:left;
+		position:relative;
+		
+		img{
+			width:420px;
+			height:263px;
+			border:1px solid #CCC;
+		}
+	}
+	.text-desc{
+		float:right;
+		position:relative;
+		margin-left:20px;
+		width:300px;
+		height:263px;
+		
+		.title{
+			margin-top:0px;
+			width:300px;
+			height:82px;
+			font-size:24px;
+			word-wrap: break-word;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			display: block;
+			display: -webkit-box;
+		}
+		.published{
+			margin-top:20px;
+			height: 17px;
+			width: 300px;
+			font-size: 15px;
+			word-wrap:break-word;
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		.description{
+			margin-top:30px;
+			height: 95px;
+			width: 300px;
+			font-size: 15px;
+			line-height:24px;
+			word-wrap: break-word;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			display: block;
+			display: -webkit-box;
+		}
+	}
+}
+
+
+/* Responsive: Landscape Tablets */
+@media screen and (max-width: 991px) {
+	.video-item{
+		margin:10px auto;
+		padding:10px 8px;
+		width: 750px;
+		height:260px;
+		.tile{
+			float:left;
+			position:relative;
+			
+			img{
+				width:360px;
+				height:238px;
+			}
+		}
+		.text-desc{
+			float:right;
+			position:relative;
+			margin-left:20px;
+			width:350px;
+			height:250px;
+			
+			.title{
+				margin-top:0px;
+				width:350px;
+				height:55px;
+				font-size:24px;
+				-webkit-line-clamp: 2;
+			}
+			.published{
+				margin-top:20px;
+				height: 17px;
+				width: 350px;
+				font-size: 15px;
+			}
+			.description{
+				margin-top:30px;
+				height: 95px;
+				width: 350px;
+				-webkit-line-clamp: 4;
+			}
+		}
+	}
+}
+
+/* Responsive: Portrait Tablets */
+@media screen and (max-width: 767px) {
+	.video-item{
+		margin:10px auto;
+		padding:20px 10px;
+		width: 480px;
+		height: 370px;
+		.tile{
+			position:relative;
+			margin:10px 19px;
+			
+			img{
+				width:420px;
+				height:263px;
+			}
+		}
+		.text-desc{
+			float:left;
+			margin-left:20px;
+			width:420px;
+			height:50px;
+			
+			.title{
+				margin-top:0px;
+				margin-bottom:5px;
+				width:420px;
+				height:26px;
+				font-size:24px;
+				-webkit-line-clamp: 1;
+			}
+			.published{
+				margin-top:0px;
+				margin-bottom:5px;
+				height: 17px;
+				width:420px;
+				font-size: 15px;
+			}
+			.description{
+				display: none;
+			}
+		}
+	}
+}
+/* Responsive: Landscape & Portrait phone */
+@media screen and (max-width: 479px) {
+	.video-item{
+		margin:10px auto;
+		padding:10px 10px;
+		width: 320px;
+		height: 260px;
+		.tile{
+			position:relative;
+			margin:10px -1px;
+			
+			img{
+				width:300px;
+				height:180px;
+			}
+		}
+		.text-desc{
+			float:left;
+			margin-left:0px;
+			width:300px;
+			height:50px;
+			
+			.title{
+				margin-top:0px;
+				margin-bottom:5px;
+				width:300px;
+				height:26px;
+				font-size:24px;
+				-webkit-line-clamp: 1;
+			}
+			.published{
+				margin-top:0px;
+				margin-bottom:5px;
+				height: 17px;
+				width: 300px;
+				font-size: 15px;
+			}
+			.description{
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<div class="list-view" ng-hide="isOnDetailView">
+	<h2>My YouTube playlist</h2>
+	
+	<div class="list-length">
+		<label>Items per page : </label>
+		<select ng-options="o for o in lengthOptions" ng-model="playlistLength" ng-change="changeLength()"></select>
+	</div>
+	<div class="pagination">
+		<button class="btn" ng-click="prevPage()" ng-show="prevToken">Previous</button>
+	</div>
+	<div ng-repeat="item in playlist">
+		<video-item item="item"></video-item>
+	</div>
+	<div class="pagination">
+		<button class="btn" ng-click="nextPage()" ng-show="nextToken">Next</button>
+	</div>
+</div>
+	
+<detail-view ng-show="isOnDetailView"></detail-view>
