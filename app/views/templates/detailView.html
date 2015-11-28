@@ -3,7 +3,7 @@
 		<a ng-click="closeDetail();">&lt; Back to list of videos</a>
 	</div>
 	<h2 class="title">{{ selectedItem.snippet.title }}</h2>
-	<h4 class="published">Published on {{ selectedItem.snippet.publishedAt }}</h4>
+	<h4 class="published">Published on {{ selectedItem.snippet.publishedAt | date:'mediumDate' }}</h4>
 	<div class="detail-tile">
 		<iframe type="text/html" ng-src="{{videoUrl}}" frameborder="0" allowfullscreen></iframe>
 	</div>

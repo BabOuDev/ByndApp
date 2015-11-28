@@ -1,7 +1,7 @@
 <div class="video-item">
 	<div class="text-desc">
 		<h2 class="title" ng-click="openDetail($index);">{{ item.snippet.title }}</h2>
-		<h4 class="published">Published on {{ item.snippet.publishedAt }}</h4>
+		<h4 class="published">Published on {{ item.snippet.publishedAt | date:'mediumDate' }}</h4>
 		<p class="description">{{ item.snippet.description }}</p>
 	</div>
 	<div class="tile">

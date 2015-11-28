@@ -6,7 +6,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 /* Scss variables declaration */
 $font-color: #868686;
 $title-color: #5E5E5E;
-$background-color: #f8f8f8;
+$background-color: #d8d8f8;
 
 .browsehappy {
   margin: 0.2em 0;
@@ -28,7 +28,17 @@ h1, h2, h3, h4, h5, h6{
 .author{
 	font-size:20px
 }
+.list-length{
+	label{
+		float:left;
+		padding: 6px;
+	}
+	select{
+		float:left;
+	}
+}
 .pagination{
+	margin:10px 0;;
 	width:100%;
 	button{
 		margin:auto;
@@ -45,12 +55,16 @@ h1, h2, h3, h4, h5, h6{
 	div{
 		padding-left: 0px;
 		padding-right: 0px;
+		margin:auto;
+		width:300px;
+		display:block;
+		text-align:center;
 	}
 }
 
 /* Custom page header */
 .header {
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 1px solid black;
 	margin-bottom: 10px;
 	h1{
 		margin:0 auto;
@@ -61,12 +75,13 @@ h1, h2, h3, h4, h5, h6{
 /* Content container */
 .container {
 	background-color: $background-color;
+	border-radius:5px;
 }
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid black;
   margin:auto;
 }
 
